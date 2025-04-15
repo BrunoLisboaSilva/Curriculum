@@ -763,3 +763,12 @@ animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
     }
 
 }
+
+.mensagens {
+    display: flex;
+    flex-flow: column;
+    background: var(--bg-color);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}

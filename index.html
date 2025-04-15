@@ -197,27 +197,38 @@
     <section class="contact" id="contact">
       <h2 class="heading">Fala <span>Comigo</span></h2>
 
-      <form action="">
+      <form action="processar-dados.php" method="post">
         <div class="input-group">
           <div class="input-box">
-            <input type="text" placeholder="Nome Completo" />
-            <input type="email" placeholder="Email" />
+            <input
+              type="text"
+              name="nome"
+              placeholder="Nome Completo"
+              required
+            />
+            <input type="email" name="email" placeholder="Email" required />
           </div>
           <div class="input-box">
-            <input type="number" placeholder="Telefone" />
-            <input type="text" placeholder="Assunto" />
+            <input
+              type="number"
+              name="telefone"
+              placeholder="Telefone"
+              required
+            />
+            <input type="text" name="assunto" placeholder="Assunto" required />
           </div>
         </div>
 
         <div class="input-group-2">
           <textarea
-            name=""
+            name="mensagem"
             id=""
             cols="30"
             rows="10"
             placeholder="Sua mensagem"
+            required
           ></textarea>
-          <input type="submit" value="Send Message" class="btn" />
+          <input type="submit" value="Enviar mensagem" class="btn" />
         </div>
       </form>
     </section>
@@ -257,4 +268,3 @@
     <script defer src="./script.js"></script>
   </body>
 </html>
-
