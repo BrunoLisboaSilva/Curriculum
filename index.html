@@ -9,6 +9,9 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    curl -H "Time-Zone: America/Fortaleza" -X POST
+    https://api.github.com/repos/github/linguist/contents/new_file.md
+
   </head>
   <body>
     <header class="header">
@@ -20,7 +23,7 @@
       <i class="bx bx-menu" id="menu-icon"></i>
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
-        <a href="#education">Cursos e Formações</a>
+        <a href="#education">Aprendizado</a>
         <a href="#services">Serviços</a>
         <a href="#projects">Projetos</a>
         <a href="#contact">Contato</a>
@@ -71,7 +74,7 @@
     </section>
 
     <section class="education" id="education">
-      <h2 class="heading">Cursos e Formações</h2>
+      <h2 class="heading">Aprendizado</h2>
 
       <div class="timeline-items">
         <div class="timeline-item">
@@ -130,7 +133,7 @@
       <div class="services-container">
         <div class="service-box">
           <div class="service-info">
-            <h4>Desenvolvedor Front-end</h4>
+            <h4>Dev Front-end</h4>
             <p>
               Posso transformar layouts e designs em código usando HTML, CSS e
               JavaScript, garantindo que tudo funcione bem em diferentes
@@ -143,7 +146,7 @@
 
         <div class="service-box">
           <div class="service-info">
-            <h4>Desenvolvimento back-end</h4>
+            <h4>Dev back-end</h4>
             <p>
               Posso trabalhar com bancos de dados (armazenar, buscar e organizar
               informações), criar APIs, lidar com requisições HTTP e garantir
@@ -185,9 +188,10 @@
       <div class="projects-box">
         <h2 class="heading">Projetos</h2>
         <div class="wrapper">
+          <a href="https://brunolisboasilva.github.io/ProjetoDevLinks/" target="_blank">
           <div class="project-item">
             <img src="devlinks.png" alt="" />
-            <h2>Devlinks</h2>
+            </a><h2>Devlinks</h2>
             <div class="stacks">
               <i class="bx bxl-html5" id="stack"></i>
               <i class="bx bxl-css3" id="stack"></i>
@@ -199,6 +203,7 @@
               links de maneira prática e eficiente
             </p>
           </div>
+        </a>
         </div>
       </div>
     </section>
