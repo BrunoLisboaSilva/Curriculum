@@ -471,7 +471,7 @@ animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
 }
 
 .service-info p {
-    text-align: left;
+    text-align: center;
     color: white;
     font-size: 16px;
     font-weight: 300;
@@ -707,6 +707,10 @@ animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
         height: 100%;
     }
    
+    .service-info p {
+        text-align: center;
+    }
+
     .projects .wrapper{
         grid-template-columns: repeat(1,1fr);
     }
@@ -826,6 +830,9 @@ animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
    
 
     .services-container{
+        margin: 0;
+        width: 100%;
+        height: 100%;
         justify-content: center;
         align-items: center;
     }
