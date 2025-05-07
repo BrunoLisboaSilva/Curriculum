@@ -23,3 +23,39 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 }
+
+const form = document.getElementById('formulario');
+  const mensagemSucesso = document.getElementById('mensagemSucesso');
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const dados = new FormData(form);
+    const url = "https://formsubmit.co/ajax/bruno.lisboa.silva073@gmail.com"; 
+
+    try {
+      const response = await fetch(url, {
+        method: "POST",
+        body: dados,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      const resultado = await response.json();
+
+      
+      if (resultado.message && response.status < 400) {
+        form.reset();
+        mensagemSucesso.style.display = "block";
+        setTimeout(() => mensagemSucesso.style.display = "none", 5000);
+      } else {
+        alert("Algo deu errado, mas o e-mail pode ter sido enviado. Verifique sua caixa de entrada.");
+        console.warn("Resposta inesperada:", resultado);
+      }
+
+    } catch (error) {
+      alert("Erro ao conectar com o servidor.");
+      console.error("Erro de conexão:", error);
+    }
+  });
