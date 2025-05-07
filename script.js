@@ -59,3 +59,7 @@ const form = document.getElementById('formulario');
       console.error("Erro de conexão:", error);
     }
   });
+
+  document.getElementById('Devlinks').addEventListener('click', function () {
+    window.open('https://brunolisboasilva.github.io/ProjetoDevLinks/', '_blank');
+  });
